@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Works| Nebula Wikipedia Book </title>
+  <link rel = "stylesheet" href ="nebula.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/kov8wrp.css">
+  <link rel='icon' href='../icon.png' type='image/x-icon'/ >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <h2>Nebula Wikipedia Book</h2>
+  <div class="wrapper">
+    <!--MENU-->
+        <div class="menu">
+          <a href="../works.html">&#x2190; works</a>
+          <a href="../../index.html">home&#10022;</a>
+          <a href="lingo.html">next&#x2192;</a>
+        </div>
+    <!--MENU-->
+    <!--responsiveMENU-->
+      <!--<a href="../index.html">home</a>-->
+      <i id="menuIcon"class="material-icons md-36"onclick="openNav()">menu</i>
+      <nav class="navBar">
+        <div class="closebtn" onclick="closeNav">&times;</div>
+          <div class="overlay-content">
+            <a href="../works.html">works&#10022;</a>
+            <a href="../../index.html">home&#10022;</a>
+            <a href="lingo.html">next&#x2192;</a>
+          </div>
+      </nav>
+    <!--respnsiveMENU-->
+    <header>
+      <h1 class="anim">Nebula Wikipedia Book | An Exercise</h1>
+      <p class="anim">As an exercise to hone my editorial layout skills, I used the content
+          from a single Wikipedia entry and created a multi-page book. My goal was to mix
+          text and image, incorporate grid systems and typographic hierarchy, use
+          thoughtful typographic choices. At the same time, I had to heed to rhythm, contrast, and
+         visual interest. The end goal was to create a grid structure and design system that I could utilize
+         through every page of my book. The reason I settled on nebulae as my topic was because
+         I have always enjoyed astronomy, and I knew that this topic would provide good visuals.</p>
+    </header>
+    <div class="work">
+      <img class="anim" src="./Nebula/Nebula_Cover.jpg" alt="front/backcover"><br>
+      <img class="anim" src="./Nebula/project_62.jpg" alt="pg2">
+      <img class="anim" src="./Nebula/project_63.jpg" alt="pg3">
+      <img class="anim" src="./Nebula/project_64.jpg" alt="pg4">
+      <img class="anim" src="./Nebula/project_65.jpg" alt="pg5">
+      <img class="anim" src="./Nebula/project_66.jpg" alt="pg6">
+      <img class="anim" src="./Nebula/project_67.jpg" alt="pg7">
+      <img class="anim" src="./Nebula/project_68.jpg" alt="pg8">
+      <img class="anim" src="./Nebula/project_69.jpg" alt="pg9">
+      <img class="anim" src="./Nebula/project_610.jpg" alt="pg10">
+      <img class="anim" src="./Nebula/project_611.jpg" alt="pg11">
+      <img class="anim" src="./Nebula/project_612.jpg" alt="pg12">
+      <img class="anim" src="./Nebula/project_613.jpg" alt="pg13">
+
+
+    </div>
+    <div class="header2">
+      <h1 class="anim">The Process</h1>
+      <p class="anim">
+        One of the first things that I had to decide on was, of course, which
+        typeface I was going to use. I created four different combinations of
+        the type specimen. After receiving feedback, I ended up choosing Monterey
+        as the heading text and Lucida Bright as the body copy. Monterey gives
+        off a scientific, mystic, and futuristic image, so I felt it would fit
+        with my concept of "Nebula" perfectly. Lucida Bright was chosen because
+        it was one of the most readable typefaces that paired well with Monterey.</p>
+      </div>
+      <div class="work2">
+        <img class="anim" src="./Nebula/type1.jpg" alt="type1">
+        <img class="anim" src="./Nebula/type2.jpg" alt="type2">
+        <img class="anim" src="./Nebula/type3.jpg" alt="type3">
+        <img class="anim" src="./Nebula/type4.jpg" alt="type4">
+        <img class="anim" src="./Nebula/sketches.jpg" alt="sketch">
+      </div>
+      <footer>
+        <a href="../../index.html">JACQUELYN WU</a>
+      </footer>
+  </div>
+<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+  //NAVIGATION MENU
+      var navBar =document.querySelector('.navBar');
+      navBar.addEventListener('click',openNav)
+      navBar.addEventListener('click',closeNav)
+      function openNav(){
+        document.querySelector('.navBar').style.width= "100%";
+      }
+      function closeNav(){
+        document.querySelector('.navBar').style.width= "0%";
+      }
+      //SCROLL
+      window.sr = ScrollReveal();
+      sr.reveal('.anim');
+      </script>
+      </body>
+      </html>
+</script>
+</body>
+</html>

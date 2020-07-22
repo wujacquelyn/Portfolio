@@ -1,0 +1,920 @@
+/*Section1*/
+body{
+  font-family: urbana, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+}
+h2{
+position: absolute;
+margin:0;
+z-index: 10;
+color: white;
+background: black;
+font-size: 4em;
+
+}
+.main{
+  padding: 0;
+  margin: 0;
+}
+.rainbow-title{
+  position: relative;
+  top:25%;
+  max-width: 100%;
+}
+#subtitle{
+  margin-top: 50vh;
+  font-size: 3em;
+  color:white;
+  text-align: center;
+  }
+.rainbow-title__canvas{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top:0;
+  }
+  .rainbow-title__image{
+    display: block;
+    width:100%;
+    position: relative;
+  }
+.rainbow{
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: radial-gradient(#ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+  background-size: 1800% 1800%;
+-webkit-animation: rainbow 10s ease infinite;
+-z-animation: rainbow 10s ease infinite;
+-o-animation: rainbow 10s ease infinite;
+  animation: rainbow 10s ease infinite;}
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 100%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
+/*Section2*/
+
+.halftone{
+  height:100vh;
+}
+.gif{
+  position: absolute;
+  display: block;
+  z-index:4!important;
+  width:40vw;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+#H_A{
+  opacity: 0;}
+#H_A:hover{
+  opacity: 1;
+  background: #9900DB;
+  cursor: url(hover.png), auto;
+
+
+
+}
+.combo1{
+  margin: none;
+  display: block;
+  position: relative;
+  top:100vh;
+  background: yellow;
+  height: 100vh;
+  width:100vw;
+  overflow: hidden;
+}
+#H_A_text{
+  position: absolute;
+  top:80vh;
+  left:60vw;
+  z-index: 8;
+  font-size: 2em;
+  width: 25vw;
+  line-height: 1em;
+  color:white;
+  background: black;
+}
+#avocado{;
+  z-index:2;
+  object-fit: contain;
+  position: absolute;
+  left:-10vw;
+  background-color: #b6ff42;
+  margin:none;
+}
+#honey{
+  z-index: 2;
+  object-fit: contain;
+  position: absolute;
+  width:40vw;
+  right:0vw;
+  background-color: #cd9b02;
+  margin:none;
+}
+/*Section3*/
+.combo2{
+  overflow: hidden;
+  margin: none;
+  display: block;
+  position: relative;
+  top:100vh;
+  background:#00FF77;
+  height: 100vh;
+  width:100%;}
+  #OJ{
+    opacity: 0;}
+  #OJ:hover{
+    opacity: 1;
+    background: yellow;
+    cursor: url(hover.png), auto;
+
+
+}
+    #OJ_text{
+      position: absolute;
+      top:80vh;
+      left:60vw;
+      z-index: 8;
+      font-size: 2em;
+      width: 25vw;
+      line-height: 1em;
+      color:white;
+      background: black;}
+  #oreo{
+    z-index: 2;
+    position: absolute;
+    left:-5vw;
+    background-color: #008EF4;
+    margin:none;}
+  #juice{
+    z-index: 2;
+    position: absolute;
+    height:140vh;
+    right:-10vw;
+    background-color: #FF8800;
+    margin:none;}
+/*Section4*/
+.combo3{
+  overflow: hidden;
+  margin: none;
+  display: block;
+  position: relative;
+  top:100vh;
+  background:#FFDB2B;
+  height: 100vh;
+  width:100%;}
+  #XDS{
+  opacity: 0;}
+  #XDS:hover{
+  opacity: 1;
+  background: orange;
+  cursor: url(hover.png), auto;
+
+
+}
+  #XDS_text{
+        position: absolute;
+        top:75vh;
+        left:60vw;
+        z-index: 8;
+        font-size: 2em;
+        width: 30vw;
+        line-height: 1em;
+        color:white;
+        background: black;}
+  #toast{
+  z-index: 2;
+  position: absolute;
+  width: 33vw;
+  height: 95vh;
+  background-color: #FFDB2B;
+  top: 60%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)}
+  #pb{
+  z-index: 2;
+  position: absolute;
+  left:-20vw;
+  background-color: #C18524;
+  margin:none;}
+  #condMilk{
+  right:-17vw;
+  z-index: 2;
+  position: absolute;
+  background-color: #FCFBBF;
+  margin:none;}
+/*Section5*/
+.combo4{
+  overflow: hidden;
+  margin: none;
+  display: block;
+  position: relative;
+  top:100vh;
+  background:#FF6895;
+  height: 100vh;
+  width:100%;}
+  #CM{
+  opacity: 0;}
+  #CM:hover{
+  opacity: 1;
+  background:#FFAA8C;
+  cursor: url(hover.png), auto;
+
+
+}
+  #CM_text{
+        position: absolute;
+        top:75vh;
+        left:60vw;
+        z-index: 8;
+        font-size: 2em;
+        width: 25vw;
+        line-height: 1em;
+        color:white;
+        background: black;}
+  #cheetos{
+    z-index: 2;
+    position: absolute;
+    background-color: #FF2B2B;
+    left:-50vw;}
+  #milk{
+    z-index: 2;
+    position: absolute;
+    right:-10vw;
+    background-color:#E1EDEB;
+    margin:none;}
+/*Section6*/
+.combo5{
+  overflow: hidden;
+  margin: none;
+  display: block;
+  position: relative;
+  top:100vh;
+  background:#725BC6;
+  height: 100vh;
+  width:100%;}
+  #M_M{
+    opacity: 0;}
+  #M_M:hover{
+    opacity: 1;
+    background:#FF4111;
+    cursor: url(hover.png), auto;
+
+
+}
+  #M_M_text{
+            position: absolute;
+            top:75vh;
+            left:60vw;
+            z-index: 8;
+            font-size: 2em;
+            width: 25vw;
+            line-height: 1em;
+            color:white;
+            background: black;}
+  #mac{
+    z-index: 2;
+    position: absolute;
+    background-color: #FFA126;
+    right:0vw;
+  }
+  #mustard{
+    z-index: 2;
+    position: absolute;
+    left:-10vw;
+    background-color:#FFFC5E;
+    margin:none;
+  }
+/*Section7*/
+.combo6{
+  overflow: hidden;
+  margin: none;
+  display: block;
+  position: relative;
+  top:100vh;
+  background:white;
+  height: 100vh;
+  width:100%;}
+
+  #PK{
+    opacity: 0;}
+  #PK:hover{
+    opacity: 1;
+    background:#69A297;
+    cursor: url(hover.png), auto;
+
+
+}
+    #PK_text{
+            position: absolute;
+            top:75vh;
+            left:60vw;
+            z-index: 8;
+            font-size: 2em;
+            width: 25vw;
+            line-height: 1em;
+            color:white;
+            background: black;}
+  #pop{
+    z-index: 2;
+    position: absolute;
+    background-color: #FFA126;
+    right:0vw;
+  }
+  #kid{
+    z-index: 2;
+    position: absolute;
+    left:-10vw;
+    background: linear-gradient(red,orange,yellow,green,blue,purple);
+    margin:none;
+  }
+
+/*Section8*/
+.combo7{
+  overflow: hidden;
+  margin: none;
+  display: block;
+  position: relative;
+  top:100vh;
+  background:#725BC6;
+  height: 100vh;
+  width:100%;}
+  #DH{
+  opacity: 0;}
+  #DH:hover{
+  opacity: 1;
+  background:#FF4111;
+  cursor: url(hover.png), auto;
+
+
+}
+  #DH_text{
+          position: absolute;
+          top:80vh;
+          left:60vw;
+          z-index: 8;
+          font-size: 3em;
+          width: 30vw;
+          line-height: 1em;
+          color:white;
+          background: black;}
+  #durian{
+  z-index: 2;
+  position: absolute;
+  background-color: #FFA126;
+  left:-10vw;}
+  #hot{
+  z-index: 2;
+  position: absolute;
+  right:-30vw;
+  background-color: #BA0000;
+  margin:none;}
+/*Section9*/
+.combo8{
+  overflow: hidden;
+  margin: none;
+  display: block;
+  position: relative;
+  top:100vh;
+  background:yellow;
+  height: 100vh;
+  width:100%;}
+  #IF{
+  opacity: 0;}
+  #IF:hover{
+  opacity: 1;
+  background:#34D1BF;
+  cursor: url(hover.png), auto;
+
+
+}
+  #IF_text{
+          position: absolute;
+          top:75vh;
+          left:60vw;
+          z-index: 8;
+          font-size: 2em;
+          width: 25vw;
+          line-height: 1em;
+          color:white;
+          background: black;}
+  #ice{
+  z-index: 2;
+  position: absolute;
+  background-color: #CEFFF7;
+  right:-10vw;
+  top:12vh;
+  height:80vh;
+  width: 60vw;}
+  #fries{
+  z-index: 2;
+  position: absolute;
+  height:110vh;
+  left:-50vw;
+  background-color: #FFC83F;
+  margin:none;
+  }
+/*Section10*/
+.combo9{
+  overflow: hidden;
+  margin: none;
+  display: block;
+  position: relative;
+  top:100vh;
+  background:#D13700;
+  height: 100vh;
+  width:100%;}
+  #MS{
+    opacity: 0;}
+  #MS:hover{
+    opacity: 1;
+    background: #2B729B;
+    cursor: url(hover.png), auto;
+
+
+}
+  #MS_text{
+            position: absolute;
+            top:75vh;
+            left:60vw;
+            z-index: 8;
+            font-size: 3em;
+            width: 30vw;
+            line-height: 1em;
+            color:white;
+            background: black;}
+  #mango{
+    z-index: 2;
+    position: absolute;
+    background-color: #FFAA00;
+    right:-30vw;
+  }
+  #soy{
+    z-index: 2;
+    position: absolute;
+    left:-30vw;
+    background-color: #4C1A00;
+    margin:none;
+  }
+/*Section11*/
+.combo10{
+  overflow: hidden;
+  margin: none;
+  display: block;
+  position: relative;
+  top:100vh;
+  background:#C0C91A;
+  height: 100vh;
+  width:100%;}
+  #BP{
+  opacity: 0;}
+  #BP:hover{
+  opacity: 1;
+  background:#D1345B;
+  cursor: url(hover.png), auto;
+
+
+}
+  #BP_text{
+          position: absolute;
+          top:75vh;
+          left:60vw;
+          z-index: 8;
+          font-size: 2em;
+          width: 25vw;
+          line-height: 1em;
+          color:white;
+          background: black;}
+  #bread{
+  z-index: 2;
+  position: absolute;
+  background-color:#7F5700;
+  right:-10vw;}
+  #pickles{
+  z-index: 2;
+  position: absolute;
+  left:-10vw;
+  background-color:#577C20;
+  margin:none;}
+/*Section12*/
+.combo11{
+  overflow: hidden;
+  margin: none;
+  display: block;
+  position: relative;
+  top:100vh;
+  background:#FFAA66;
+  height: 100vh;
+  width:100%;}
+  #FC{
+  opacity: 0;}
+  #FC:hover{
+  opacity: 1;
+  background:#0AFFC5;
+  cursor: url(hover.png), auto;
+
+
+}
+  #doctorwho{
+    position: absolute;
+    display: block;
+    width:30%;
+    height:60%;
+    z-index:3!important;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+  }
+  #FC_text{
+          position: absolute;
+          top:76vh;
+          left:60vw;
+          z-index: 8;
+          font-size: 2em;
+          width: 25vw;
+          line-height: 1em;
+          color:white;
+          background: black;}
+  #custard{
+  z-index: 2;
+  position: absolute;
+  background-color: #F9D42F;
+  right:-20vw;}
+  #fish{
+  z-index: 2;
+  position: absolute;
+  left:-30vw;
+  background-color: #D98324;
+  margin:none;}
+/*Section13*/
+.combo12{
+  overflow: hidden;
+  margin: none;
+  display: block;
+  position: relative;
+  top:100vh;
+  background:#FFBB00;
+  height: 100vh;
+  width:100%;}
+  #NC{
+  opacity: 0;}
+  #NC:hover{
+  opacity: 1;
+  background:#C1ED00;
+  cursor: url(hover.png), auto;
+
+
+}
+  #nutella{
+  z-index: 2;
+  position: absolute;
+  background-color: #603000;
+  right:0vw;}
+  #chips{
+  z-index: 2;
+  position: absolute;
+  left:-20vw;
+  background-color: #EDD95A;
+  margin:none;}
+/*Last Section*/
+.combo13{
+overflow: hidden;
+margin: none;
+display: block;
+position: relative;
+top:100vh;
+background:#FF4F63;
+height: 100vh;
+width:100%;}
+#WS{
+  opacity: 0;}
+#WS:hover{
+  opacity: 1;
+  background:#0083FF;
+  cursor: url(hover.png), auto;
+
+
+}
+#watermelon{
+  z-index: 2;
+  position: absolute;
+  background-color: #F4281D;
+  left:-30vw;
+}
+#salt{
+  z-index: 2;
+  position: absolute;
+  right:-25vw;
+  background-color: #FFEFCE;
+  margin:none;
+}
+/*Responsiveness*/
+@media only screen and (max-width: 900px){
+  .combo1, .combo2, .combo3, .combo4, .combo5, .combo6, .combo7, .combo8, .combo9,
+   .combo10, .combo11, .combo12,.combo13{
+     width:100vw;
+     height:50vh;
+   }
+  .halftone{
+    width:50%;
+    height:50vh;
+  }
+  h2{
+    font-size: 1.75em;
+    line-height: 1em;
+  }
+  #H_A{
+    opacity: 0;}
+  #H_A:hover{
+    opacity: 1;
+    background: #9900DB;
+    cursor: url(hover.png), auto;
+  }
+  #H_A_text{
+    top:35vh;
+    left:50vw;
+    z-index: 8;
+    font-size: 1em;
+    width: 35vw;
+  }
+  #avocado{;
+    left:-5vw;
+  }
+  #honey{
+    width:40vw;
+  }
+  /*Section3*/
+    #OJ{
+      opacity: 0;}
+    #OJ:hover{
+      opacity: 1;
+      background: yellow;
+      cursor: url(hover.png), auto;}
+
+
+      #OJ_text{
+        top:35vh;
+        left:50vw;
+        font-size: 1em;
+        width: 35vw;
+        line-height: 1em;}
+    #oreo{
+      height:45vh;
+      top:7vh;
+      left:-5vw;}
+    #juice{
+      height:45vh;
+      top:7vh;
+      right:-4vw;}
+  /*Section4*/
+    #XDS{
+    opacity: 0;}
+    #XDS:hover{
+    opacity: 1;
+    background: orange;
+    cursor: url(hover.png), auto;
+
+
+}
+    #XDS_text{
+          top:35vh;
+          left:50vw;
+          font-size: 1em;
+          width: 40vw;}
+    #toast{
+    width: 33vw;
+    height: 33vh;
+    }
+    #pb{
+    width:33vw;
+    height:50vh;
+    left:0vw;}
+    #condMilk{
+    width:33vw;
+    height:50vh;}
+  /*Section5*/
+    #CM{
+    opacity: 0;}
+    #CM:hover{
+    opacity: 1;
+    background:#FFAA8C;
+    cursor: url(hover.png), auto;
+
+
+}
+    #CM_text{
+          position: absolute;
+          top:35vh;
+          left:50vw;
+          font-size: 1em;
+          width: 40vw;}
+    #cheetos{
+      left:-5vw;}
+    #milk{
+    right:-5vw;}
+  /*Section6*/
+    #M_M{
+      opacity: 0;}
+    #M_M:hover{
+      opacity: 1;
+      background:#FF4111;
+      cursor: url(hover.png), auto;
+
+
+}
+    #M_M_text{
+              position: absolute;
+              top:35vh;
+              left:50vw;
+              z-index: 8;
+              font-size: 1em;
+              width: 40vw;}
+    #mustard{
+      left:0vw;}
+  /*Section7*/
+    #PK{
+      opacity: 0;}
+    #PK:hover{
+      opacity: 1;
+      background:#69A297;
+      cursor: url(hover.png), auto;
+
+
+}
+      #PK_text{
+              top:35vh;
+              left:50vw;
+              font-size: 1em;
+              width: 40vw;}
+    #kid{
+      left:0vw;}
+
+  /*Section8*/
+    #DH{
+    opacity: 0;}
+    #DH:hover{
+    opacity: 1;
+    background:#FF4111;
+    cursor: url(hover.png), auto;
+
+
+}
+    #DH_text{
+            top:35vh;
+            left:50vw;
+            font-size: 1em;
+            width: 35vw;}
+    #durian{;
+    left:-1vw;}
+    #hot{
+    right:0vw;}
+
+  /*Section9*/
+    #IF{
+    opacity: 0;}
+    #IF:hover{
+    opacity: 1;
+    background:#34D1BF;
+    cursor: url(hover.png), auto;
+
+
+}
+    #IF_text{
+            top:35vh;
+            left:50vw;
+            font-size: 1em;
+            width: 45vw;}
+    #ice{
+    right:-1vw;
+    top:0vh;
+    height:50vh;
+    width: 50vw;}
+    #fries{
+    height:50vh;
+    left:-1vw;}
+  /*Section10*/
+    #MS{
+      opacity: 0;}
+    #MS:hover{
+      opacity: 1;
+      background: #2B729B;
+      cursor: url(hover.png), auto;
+
+
+}
+    #MS_text{
+              top:35vh;
+              left:50vw;
+              font-size: 1em;
+              width: 40vw;}
+    #mango{
+      right:-1vw;}
+    #soy{
+      left:-1vw;}
+  /*Section11*/
+    #BP{
+    opacity: 0;}
+    #BP:hover{
+    opacity: 1;
+    background:#D1345B;
+    cursor: url(hover.png), auto;
+
+
+}
+    #BP_text{
+            top:35vh;
+            left:50vw;
+            font-size: 1em;
+            width: 50vw;}
+    #bread{
+    right:-1vw;}
+    #pickles{
+      left:-10vw;}
+  /*Section12*/
+    #FC{
+    opacity: 0;}
+    #FC:hover{
+    opacity: 1;
+    background:#0AFFC5;
+    cursor: url(hover.png), auto;
+
+
+}
+    #doctorwho{
+      display: block;
+      width:35%;
+      height:50%;}
+    #FC_text{
+            top:35vh;
+            left:50vw;
+            font-size: 1 em;
+            width: 45vw;}
+    #custard{
+    right:-1vw;}
+    #fish{
+    left:-1vw;}
+  /*Section13*/
+    #NC{
+    opacity: 0;}
+    #NC:hover{
+    opacity: 1;
+    background:#C1ED00;
+    cursor: url(hover.png), auto;
+
+
+}
+    #nutella{
+    background-color: #603000;
+    right:0vw;}
+    #chips{
+    left:0vw;
+    background-color: #EDD95A;
+    margin:none;}
+  /*Last Section*/
+
+  #WS{
+    opacity: 0;}
+  #WS:hover{
+    opacity: 1;
+    background:#0083FF;
+    cursor: url(hover.png), auto;
+
+
+}
+  #watermelon{
+    left:-1vw;
+  }
+  #salt{
+    right:-1vw;}
+}

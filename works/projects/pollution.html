@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Air Pollution in the World</title>
+<link rel="stylesheet" href="https://use.typekit.net/rew6pwt.css"/>
+<link rel="stylesheet" href="https://use.typekit.net/kov8wrp.css">
+<link href="pollution.css" rel="stylesheet" type="text/css" />
+<link rel='icon' href='../icon.png' type='image/x-icon'/ >
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <!--MENU-->
+      <div class="menu">
+        <a href="../doodle.html">&#x2190;doodles</a>
+        <a href="../../../index.html">home&#10022;</a>
+        <a href="../../works.html">works&#10022;</a>
+      </div>
+  <!--MENU-->
+  <!--responsiveMENU-->
+    <!--<a href="../index.html">home</a>-->
+    <i id="menuIcon"class="material-icons md-36"onclick="openNav()">menu</i>
+    <nav class="navBar">
+      <div class="closebtn" onclick="closeNav">&times;</div>
+        <div class="overlay-content">
+          <a href="../doodle.html">&#x2190;doodles</a>
+          <a href="../../../index.html">home&#10022;</a>
+          <a href="../../works.html">works&#10022;</a>
+        </div>
+    </nav>
+  <!--respnsiveMENU-->
+<div class="wrapper">
+  <div id ="title">Air Pollution in the World</div>
+  <div class="homepage"><!--Page1 Start-->
+        <h1> What is AQI?</h1>
+        <div class="pollutant">
+          <button id="delhiAPI" onclick="window.location.href ='./Cities/delhi.html';"></button>
+          <button id="cedAPI" onclick="window.location.href ='./Cities/cedart.html';"></button>
+          <button id="jabAPI"onclick="window.location.href ='./Cities/jabavu.html';"></button>
+          <button id="jiyAPI"onclick="window.location.href ='./Cities/jiyuan.html';"></button>
+          <button id="qnyAPI"onclick="window.location.href ='./Cities/queens.html';"></button>
+          <button id="sakAPI"onclick="window.location.href ='./Cities/sakarya.html';"></button>
+        </div>
+
+
+      <div class="cityName">
+        <div id= "Delhi">SRI AURIBINDO<br>MARG, DELHI, INDIA</div>
+        <div id= "Cedart">CEDART, OAXACA,<br>MEXICO</div>
+        <div id="Jabavu">JABAVU,JOHANNESBURG<br>METRO, SOUTH AFRICA</div>
+        <div id= "Jiyuan">SEWAGE TREATMENT<br>JIYUAN, CHINA</div>
+        <div id= "Queens">QUEENS COLLEGE,<br>NEW YORK, USA</div>
+        <div id= "Turkey">SAKARYA HENDEK OSB,<br>TURKEY</div>
+      </div>
+      <div id="info">
+        <h2> What is the Air Quality Index (AQI)?</h2>
+        <p1>This Air Quality Index (AQI) system is used by the US EPA to convert the
+          raw pollutants readings, expressed in µg/m3 or ppb, into the AQI (scale
+          from 0 to 500). The reason for this averaging is that the AQI scale specifies
+          that each of the Levels of Health Concern (i.e. Good, Moderate,... Unhealthy...) is valid
+           under 24 hours exposure.</p1>
+        <img src="aqiguide.svg" alt="aqiguides" width="70%">
+        <div id="arrow">&#10148;</div>
+      </div>
+
+    </div><!--Page1 End-->
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="pollution.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  vertical-align: baseline;
+  font-size: 100%;
+  box-sizing: border-box;
+  border:none;
+}
+body{
+  margin:0;
+}
+.footer{
+  z-index: 2;
+  position: absolute;
+  top:92vh;
+  width:100vw;
+  height:8vh;
+  background-color: #b1f7ef;
+}
+#links{
+  position: relative;
+  text-align: center;
+  top: 28%;
+}
+a{
+  color:#002382;
+  margin: 2.5em;
+  letter-spacing: 0.08em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-decoration: none;
+
+}
+a:hover{
+  color:#009dff;
+
+}
+#clickIMG{
+  max-width: 100vw;
+}
+#clickIMG img{
+  cursor:pointer;
+  height: 12vh;
+  opacity: 0;
+}
+h1{
+  text-shadow: 0 0 10px rgba(0,0,0,1);
+  font-family: arpona, serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 6em;
+  color: white;
+  z-index: 5;
+  text-align: center;
+  top: 42.5%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+h2{
+  text-shadow: 0 0 5px rgba(0,0,0,1);
+  font-family: arpona, serif;
+  font-weight: 300;
+  position: absolute;
+  font-size: 2em;
+  color: #EEF7F6;
+  z-index: 5;
+  text-align: center;
+  top: 52.5%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+#pic{
+  object-fit: cover;
+  width: 100vw;
+  height:100vh;
+}
+#BG{
+cursor: url(img/click.png), auto;
+z-index: 0;
+position: absolute;
+top:0;
+width: 100vw;
+height:100vh;
+/*background-image: linear-gradient(#1A006A,#321D7D,#2641D7);*/
+}
+@media only screen and (max-width: 600px){
+  .footer{
+    height:15vh;
+    top:85vh;
+  }
+  #links{
+    top: 1vh;
+    height: 5vh;
+  }
+  a{
+    margin: 2.5em;
+    letter-spacing: 0.10em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.75em;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  h1{
+    padding: 0;
+    position: absolute;
+    font-size: 4em!important;
+    color: white;
+    z-index: 5;
+    text-align: center;
+    top: 44.75%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  h2{
+    font-size: 1.5em;
+  }
+  #fade-in{
+    opacity: 0;
+  }
+}
+@media only screen and (max-width: 990px){
+  h1{
+    font-size: 7em;
+  }
+  h2{
+    font-size: 3em;
+  }
+  a{
+    margin: 0.5em;
+    font-size: 2.5em;
+  }
+  #fade-in{
+  color: #002382;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  opacity: 1;
+  position: absolute;
+  top:35%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards; }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+{

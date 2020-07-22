@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> About</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+  rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/kov8wrp.css">
+  <link rel='icon' href='../img/icon.png' type='image/x-icon'/ >
+  <link rel = "stylesheet" href ="about.css">
+</head>
+<body>
+  <h2>about</h2>
+  <div class="wrapper">
+    <!--MENU-->
+        <div class="menu">
+          <a href="../index.html">&#x2190; home</a>
+          <a href="../works/works.html">works&#10022;</a>
+          <a href="../contact/contact.html">contact&#10022;</a>
+        </div>
+    <!--MENU-->
+    <!--responsiveMENU-->
+      <!--<a href="../index.html">home</a>-->
+      <i id="menuIcon"class="material-icons md-36"onclick="openNav()">menu</i>
+      <nav class="navBar">
+      <div class="closebtn" onclick="closeNav">&times;</div>
+        <div class="overlay-content">
+          <a href="../index.html">home&#10022;</a>
+          <a href="../works/works.html">works&#10022;</a>
+          <a href="../contact/contact.html">contact&#10022;</a>
+        </div>
+    </nav>
+    <!--respnsiveMENU-->
+    <!--  <i id="menuIcon"class="material-icons md-36"onclick="openNav()">menu</i>-->
+    <header>
+      <div class="work">
+        <img class="anim" src="profile.svg" alt="reference">
+      </div>
+      <h1 class="anim">Nice to meet you <i class="material-icons">insert_emoticon</i></h1>
+
+      <p class="anim">
+        I am Jacquelyn Wu, a Canadian designer, and illustrator that is currently
+         studying BFA Communication Design at Parsons School of Design in New York
+         City. Zealous for everything whimsical and obscure, I aim to narrate a
+         story and provide a voice for my subjects. I enjoy challenging myself
+         by exploring different media and incorporating my illustrations into design pieces.
+       </p>
+      <footer>
+        <p>JACQUELYN WU</p>
+      </footer>
+<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="about.js"></script>
+<script type="text/javascript">
+  window.sr = ScrollReveal();
+  sr.reveal('.anim');
+</script>
+</body>
+</html>

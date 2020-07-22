@@ -1,0 +1,199 @@
+body {
+  height: 100vh;
+  display: flex;
+  background-color: #232725;
+}
+.wrapper{
+  margin:auto;
+}
+h1{
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #c8d7c8;
+  position:relative;
+  left: 25px;
+}
+h2 {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #c8d7c8;
+  position: absolute;
+  top: 450px;
+  left: 25px;
+}
+button{
+  background-color: #c8d7c8;
+  padding: 15px 30px;
+  position: absolute;
+  top: 500px;
+  left: 50px;
+}
+  button:hover{
+    cursor: pointer;
+  }
+.image_grid {
+  width: 832px;
+  height: 632px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  left: 10vw;
+  top: inherit;
+}
+.card{
+  width: 200px;
+  height: 200px;
+  margin: 4px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all .8s;
+}
+
+.front:hover {
+  transform: scale(0.99);
+  cursor: pointer;
+}
+.front{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 4px;
+  z-index: 1;
+  backface-visibility: hidden;
+  transform: scale(1);
+}
+.back {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border-radius: 4px;
+  z-index: 0;
+  backface-visibility: hidden;
+  transform: rotateY(-180deg);
+}
+/*Menu*/
+.menu{
+  position: absolute;
+  top: 0vh;
+  left: 0em;
+  font-size: 1.5em;
+  font-family: 'Raleway',sans-serif;
+  letter-spacing: 0.01em;
+}
+.menu a{
+  color: #B1F7EF;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0em 2.5em 0em 2.5em;
+}
+.menu a:hover{
+  color:#009dff;
+}
+/*Menu*/
+/*NAVBAR*/
+nav{
+  font-weight: 700;
+  font-family: 'Raleway',sans-serif;
+}
+.navBar{
+  height: 100%;
+  width:0;
+  line-height: 4em;
+  position: fixed;
+  z-index: 11;
+  top:0;
+  left:0;
+  background-color: #243b2f;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.navBar::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.overlay-content{
+  position: relative;
+  top:25%;
+  width:100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.navBar a{
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #B1F7EF;
+  display: block;
+  transition: 0.3s;
+}
+.overlay-content a:hover{
+  color:#009dff;
+}
+.navBar .closebtn{
+  color: #B1F7EF;
+  cursor: pointer;
+  position: absolute;
+  top:0;
+  right:45px;
+  font-size: 4em;
+}
+
+#menuIcon{
+  display: none;
+}
+/*Responsiveness*/
+@media only screen and (max-width: 900px){
+  /*menu resp*/
+    .menu{
+      display: none!important d;
+    }
+    h2{
+     margin-bottom: 1em;
+    }
+    #menuIcon{
+      position: absolute;
+      margin: 0.25em;
+      display: inline;
+      outline: none;
+      font-size: 3em;
+      font-weight: 700;
+      cursor: pointer;
+      color:#B1F7EF;
+    }
+  /*menu resp*/
+    .wrapper{
+      margin:none;
+      width:75vw!important;
+    }
+    .image_grid{
+      width: 732px;
+      height: 532px;
+    }
+    .front, .back, .card{
+      left:0vw;
+      margin:1px;
+      width: 200vw!important;
+      height:200px!important;
+    }
+    h1{
+      left:0vw;
+      top:7vh;
+    }
+    h2{
+      top:17vh;;
+      left:28vw;
+    }
+    button{
+      top:22vh;
+      left:40vw;
+    }
+
+}

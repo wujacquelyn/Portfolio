@@ -1,0 +1,330 @@
+html,body{
+  font-family: forma-djr-display, sans-serif;
+  display: contents;
+  overflow: none;
+  margin: 0vw;
+  padding: 0vw;
+  background-color: black;
+}
+.wrapper{
+  position: absolute;
+  top: 10vh;
+  width: 100vw;
+  margin: 0 auto;
+  border-color: 10px black solid;
+}
+#title{
+  position: relative;
+  top:1vh;
+  text-align: center;
+  font-size: 4vh;
+  margin: 1vh;
+  letter-spacing: 0.2em;
+  color: white;
+  text-shadow: 0 0 50px #C300FF;
+}
+/*page title*/
+
+h1{
+  position: absolute;
+  top: 1vh;
+  right: 2vw;
+  color: #95C2E5;
+  text-align:right;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+h1:hover{
+  text-shadow: 0 0 10px #95C2E5;
+}
+.cityName{
+  position: absolute;
+  top:110vh;
+  width: 90vw;
+  margin: 5vw;
+  padding: 0;
+  grid-gap: 6vw;
+  display: grid;
+  grid-template-rows: 5vw;
+  grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw;
+  font-family: forma-djr-display, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3.5vh;
+  justify-items: stretch;
+  letter-spacing: 0.2em;
+  line-height: 6vh;
+  white-space: nowrap;
+  color: white;
+  text-shadow: 0 0 50px #C300FF;
+}
+button{
+  margin: 5vw;
+  z-index: 0;
+  position:absolute;
+  top: 5vh;
+  height: 10vw;
+  width: 10vw;
+  border-color: #00D4FF;
+  background: url(color.png);
+  background-size: cover;
+  animation: animate 10s ease-in infinite;
+  font-family: forma-djr-display, sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  font-size: 1em;
+  box-shadow: 0 0 15px #95C2E5;
+  color: #95C2E5;
+  outline: none;
+}
+button:hover{
+  cursor: pointer;
+  height: 10vw;
+  width: 10vw;
+  background: url(color_hover.png);
+  background-size: cover;
+  box-shadow: 0 0 15px #c96ae4;
+}
+.pollutant{
+  position:absolute;
+  display: grid;
+  width: 90vw;
+  margin: 0vw;
+  grid-gap: 6vw;
+  grid-template-rows: 20vw;
+  grid-template-columns: 10vw 10vw 10vw 10vw 10vw 10vw;
+
+}
+#Delhi{
+align-self: center;
+grid-row: 1;
+grid-column: 1 / 2;
+  transform: rotate(-90deg);
+}
+#Cedart{
+  align-self: center;
+  grid-row: 1;
+  grid-column: 2 / 3;
+  transform: rotate(-90deg);
+}
+#Jabavu{
+  align-self: center;
+  grid-row: 1;
+  grid-column: 3 / 4;
+  transform: rotate(-90deg);
+}
+#Jiyuan{
+  align-self: center;
+  grid-row: 1;
+  grid-column: 4 / 5;
+  transform: rotate(-90deg);
+}
+#Queens{
+  align-self: center;
+  grid-row: 1;
+  grid-column:5 / 6;
+  transform: rotate(-90deg);
+}
+#Turkey{
+  align-self: center;
+  grid-row:1;
+  grid-column: 6 / 7;
+  transform: rotate(-90deg);
+}
+#delhiAPI{
+  align-self: center;
+  grid-row: 1;
+  grid-column: 1 / 2;
+}
+#cedAPI{
+  align-self: center;
+  grid-row: 1;
+  grid-column: 2 / 3;
+}
+#jabAPI{
+  align-self: center;
+  grid-row: 1;
+  grid-column: 3 / 4;
+}
+#jiyAPI{
+  align-self: center;
+  grid-row: 1;
+  grid-column: 4 / 5;
+}
+#qnyAPI{
+  align-self: center;
+  grid-row: 1;
+  grid-column: 5 / 6;
+}
+#sakAPI{
+  align-self: center;
+  grid-row: 1;
+  grid-column: 6 / 7;
+}
+@keyframes animate {
+    0%,100%
+    {
+      border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+    }
+    25%
+    {
+      border-radius: 73% 27% 26% 38% / 73% 36% 64% 27%;
+    }
+    50%
+    {
+      border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
+    }
+    75%
+    {
+      border-radius: 40% 60% 70% 30% / 47% 62% 38% 53%;
+    }
+}
+#info{
+  font-family: forma-djr-display, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 150vh;
+  width: 100vw;
+  height:120vh;
+  background-image: linear-gradient(black,#364184,#676291);
+}
+p1{
+  position: absolute;
+  top:15vh;
+  height: 10em;
+  align-self: center;
+  font-size: 1.25em;
+  line-height: 1.5em;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  padding:0;
+  color: white;
+}
+h2{
+  position: absolute;
+  top:0vh;
+  align-self: center;
+  color:white;
+}
+img{
+  margin:2vw;
+  position: relative;
+  top:10vh;
+}
+#arrow{
+  cursor: pointer;
+  position: fixed;
+  bottom: 2vh;
+  right:2vw;
+  color: white;
+  font-size: 3em;
+  transform: rotate(270deg);
+}
+/*Menu*/
+.menu{
+  position: absolute;
+  margin-bottom: 5em;
+  top: 0vh;
+  left: 0em;
+  font-size: 1.5em;
+}
+.menu a{
+  color: #4460EF;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0em 2.5em 0em 2.5em;
+}
+.menu a:hover{
+  color:#009dff;
+}
+/*Menu*/
+/*NAVBAR*/
+nav{
+  font-weight: 700;
+}
+.navBar{
+  height: 100%;
+  width:0;
+  line-height: 4em;
+  position: fixed;
+  z-index: 11;
+  top:0;
+  left:0;
+  background-color: #D5EBE9;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.navBar::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.overlay-content{
+  position: relative;
+  top:25%;
+  width:100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.navBar a{
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #4460EF;
+  display: block;
+  transition: 0.3s;
+}
+.overlay-content a:hover{
+  color:#009dff;
+}
+.navBar .closebtn{
+  color: #4460EF;;
+  cursor: pointer;
+  position: absolute;
+  top:0;
+  right:45px;
+  font-size: 4em;
+}
+
+#menuIcon{
+  display: none;
+}
+@media only screen and (max-width: 600px){
+/*menu resp*/
+  .menu{
+    display: none;
+  }
+  h2{
+   margin-bottom: 1em;
+  }
+  #menuIcon{
+    position: relative;
+    margin: 0.5em;
+    display: inline;
+    outline: none;
+    font-size: 3em;
+    font-weight: 700;
+    cursor: pointer;
+    color:#4460EF;
+  }
+/*menu resp*/
+img{
+  width: 200vw!important;
+  height:200vh;
+}
+#title{
+  top:10vh;
+}
+.pollutant{
+  top: 20vh;
+}
+.cityName{
+  font-size: 2.5vh;
+  line-height: 3vh;
+  grid-gap: 5vw;
+  }
+}

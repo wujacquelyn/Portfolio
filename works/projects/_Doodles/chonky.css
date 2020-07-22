@@ -1,0 +1,169 @@
+body{
+  background: #b8f2e6;
+}
+.coco{
+  margin: 1%;
+}
+
+#head{
+  z-index: 3;
+  position: fixed;
+  top:8%;
+  left:-1%;
+  width: 40%;
+  height:40%;
+}
+#body{
+  margin: none;
+  padding: none;
+  z-index:1;
+  left:15%;
+  position: fixed;
+  width: 70%;
+  height:80%;
+}
+#frontlegs{
+  z-index: 1;
+  position: fixed;
+  top:30%;
+  left:30%;
+  width: 40%;
+  height:70%;
+}
+  #backlegs{
+  z-index: -1;
+  position: fixed;
+  top:30%;
+  left:25%;
+  width: 40%;
+  height:70%;
+  }
+#tail{
+  z-index: 2;
+  position: fixed;
+  left: 62%;
+  top:40%;
+  width: 55%;
+  height:55%;
+}
+@media only screen and (max-width: 600px) {
+  #head{
+    z-index: 3;
+    position: fixed;
+    top:3%;
+    left:2%;
+    width: 35%;
+    height:35%;
+  }
+  #body{
+    margin: none;
+    padding: none;
+    z-index:1;
+    top:0%;
+    left:15%;
+    position: fixed;
+    width: 65%;
+    height:40%;
+  }
+  #frontlegs{
+    z-index: 1;
+    position: fixed;
+    top:19%;
+    left:25%;
+    width: 50%;
+    height:75%;
+  }
+    #backlegs{
+    z-index: -1;
+    position: fixed;
+    top:19%;
+    left:15%;
+    width: 50%;
+    height:75%;
+    }
+  #tail{
+    z-index: 2;
+    position: fixed;
+    left: 75%;
+    top:15%;
+    width: 25%;
+    height:25%;
+  }
+}
+@media only screen and (max-height: 500px) {
+  #body{
+    margin: none;
+    padding: none;
+    z-index:1;
+    top:0%;
+    left:15%;
+    position: fixed;
+    width: 60%;
+    height:60%;
+  }
+  #frontlegs{
+    z-index: 1;
+    position: fixed;
+    top:19%;
+    left:25%;
+    width: 45%;
+    height:75%;
+  }
+    #backlegs{
+    z-index: -1;
+    position: fixed;
+    top:19%;
+    left:15%;
+    width: 45%;
+    height:75%;
+    }
+  #tail{
+    z-index: 2;
+    position: fixed;
+    left: 63%;
+    top:35%;
+    width: 50%;
+    height:50%;
+  }
+}
+@media only screen and (max-height: 450px) {
+  #body{
+    margin: none;
+    padding: none;
+    z-index:1;
+    left:15%;
+    position: fixed;
+    width: 70%;
+    height:80%;
+  }
+  #head{
+    position: fixed;
+    left:-9%;
+    width: 50%;
+    height:50%;
+  }
+  #frontlegs{
+    z-index: 1;
+    position: fixed;
+    top:35%;
+    left:40%;
+    width: 30%;
+    height:63%;
+  }
+    #backlegs{
+    z-index: -1;
+    position: fixed;
+    top:35%;
+    left:30%;
+    width: 30%;
+    height:63%;
+    }
+  #tail{
+    z-index: 2;
+    position: fixed;
+    left: 59%;
+    top:35%;
+    width: 55%;
+    height:55%;
+  }
+}

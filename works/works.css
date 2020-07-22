@@ -1,0 +1,163 @@
+body, html{
+  height: 100%;
+}
+body{
+  margin:0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #340f88/*#A0F1DA*/;
+}
+main{
+  display: grid;
+  grid-column-gap: 1vw;
+  grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
+}
+img{
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.75);
+
+}
+img:hover{
+  cursor: pointer;
+}
+h1{
+  color:#b1f7ef;
+  font-size: 3em;
+  margin-top: 0;
+  margin-left: 0.5em;
+}
+h4{
+  font-size: 1.15em;
+  margin: 7% 0 3% 0;
+}
+p{
+  margin: 0;
+  font-size: 0.9em;
+  margin: 0% 0 2% 0;
+}
+footer{
+  margin-top: 15vh;
+  margin-bottom: 2.5%;
+  text-align: center;
+
+}
+footer a{
+  text-decoration: none;
+  color: #b1f7ef;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  font-family: arpona, serif;
+  font-weight: 300;
+  letter-spacing: 0.5em;
+  font-size: 1em;
+}
+.cover{
+  z-index: 0;
+}
+/*.cover:hover{
+-webkit-filter: blur(5px);
+     filter: blur(5px);
+}*/
+.card{
+  margin: 0;
+  position: relative;
+  top:7.5vh;
+
+}
+.info{
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  top:2%;
+  text-align: center;
+  opacity: 0;
+  background-color: #20164b;
+  color: white;
+}
+.card:hover .info{
+  opacity: 1;
+  cursor:pointer;
+}
+/*Menu*/
+.menu{
+  position: absolute;
+  top: 10vh;
+  left: 0em;
+  font-size: 1.5em;
+}
+.menu a{
+  color: #b1f7ef;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0em 2.5em 0em 2.5em;
+}
+.menu a:hover{
+  color:#009dff;
+}
+/*Menu*/
+/*NAVBAR*/
+nav{
+  font-weight: 700;
+}
+.navBar{
+  height: 100%;
+  width:0;
+  line-height: 4em;
+  position: fixed;
+  z-index: 11;
+  top:0;
+  left:0;
+  background-color: #1b458a;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.navBar::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.overlay-content{
+  position: relative;
+  top:25%;
+  width:100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.navBar a{
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #b1f7ef;
+  display: block;
+  transition: 0.3s;
+}
+.overlay-content a:hover{
+  color:#009dff;
+}
+.navBar .closebtn{
+  color: #b1f7ef;
+  cursor: pointer;
+  position: absolute;
+  top:0;
+  right:45px;
+  font-size: 4em;
+}
+
+#menuIcon{
+  display: none;
+}
+/*Responsiveness*/
+@media only screen and (max-width: 600px){
+  .menu{
+    display: none;
+  }
+  #menuIcon{
+    position: absolute;
+    top: 10vh;
+    left: 0.5em;
+    display: inline;
+    outline: none;
+    font-size: 3em;
+    font-weight: 700;
+    cursor: pointer;
+    color:#b1f7ef;
+  }
+}

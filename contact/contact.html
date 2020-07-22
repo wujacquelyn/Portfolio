@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Contact | Get in Touch! </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <link rel="stylesheet" href="https://use.typekit.net/kov8wrp.css">
+  <link rel='icon' href='../img/icon.png' type='image/x-icon'/ >
+  <link rel = "stylesheet" href ="contact.css">
+</head>
+<body>
+  <h1>contact</h1>
+  <div class="wrapper">
+    <!--MENU-->
+        <div class="menu">
+          <a href="../index.html">&#x2190; home</a>
+          <a href="../works/works.html">works&#10022;</a>
+          <a href="../about/about.html">about&#10022;</a>
+        </div>
+    <!--MENU-->
+    <!--responsiveMENU-->
+      <!--<a href="../index.html">home</a>-->
+      <i id="menuIcon"class="material-icons md-36"onclick="openNav()">menu</i>
+      <nav class="navBar">
+      <div class="closebtn" onclick="closeNav">&times;</div>
+        <div class="overlay-content">
+          <a href="../index.html">home&#10022;</a>
+          <a href="../works/works.html">works&#10022;</a>
+          <a href="..s/about/about.html">about&#10022;</a>
+        </div>
+    </nav>
+    <!--respnsiveMENU-->
+
+    <div class="contact-form">
+      <div class="contact-title">
+        <h2>Contact Me
+          <a href="https://www.instagram.com/ding.lyn.lyn.lyn/"> <i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/jacquelyn-wu/"> <i class="fab fa-linkedin-in"></i></a>
+        </h2>
+        <h3>Feel free to get in touch!</h3>
+        <!--<a href="mailto:jacwu225@gmail.com"><i class="fas fa-envelope"></i> jacwu225@gmail.com</a>-->
+
+      </div>
+      <form id="contact-form" method="post" action="">
+        <input name="name" type="text" class="form-control" placeholder="Your Name"required>
+        <br>
+        <input name="email" type="email" class="form-control" placeholder="Your Email"required>
+        <br>
+        <p class=textbox>
+          <textarea name="message" class="form-control" placeholder="<Type Here>" row="4" required></textarea><br>
+          <input type="submit" class="form-control submit" value="SEND MESSAGE">
+        </p>
+      </form>
+    </div>
+    <?php
+      $name = $_POST['name'];
+      $email =$_POST['email'];
+      $message = $_POST['message'];
+
+      $formcontent="From: $name \n Message: $message";
+      $recipient = "nutella.monster@gmail.com";
+      $subject = "New Form Submission";
+      $mailheader = "From: $email \r\n";
+      mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+      echo "Thank You!"
+     ?>
+
+      <footer>
+        <p>JACQUELYN WU</p>
+      </footer>
+  </div>
+<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="contact.js"></script>
+</body>
+</html>

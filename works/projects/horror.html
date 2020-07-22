@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Works | Horror Comic </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://use.typekit.net/kov8wrp.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel='icon' href='../icon.png' type='image/x-icon'/ >
+  <link rel = "stylesheet" href ="horror.css">
+</head>
+<body>
+  <h2>Horror Comic</h2>
+  <div class="wrapper">
+    <!--MENU-->
+        <div class="menu">
+          <a href="raven.html">&#x2190; previous</a>
+          <a href="../works.html">works&#10022;</a>
+          <a href="cat.html">next&#x2192;</a>
+        </div>
+    <!--MENU-->
+    <!--responsiveMENU-->
+
+      <i id="menuIcon"class="material-icons md-36"onclick="openNav()">menu</i>
+      <nav class="navBar">
+        <div class="closebtn" onclick="closeNav">&times;</div>
+          <div class="overlay-content">
+            <a href="raven.html">&#x2190; previous</a>
+            <a href="../works.html">works&#10022;</a>
+            <a href="cat.html">next&#x2192;</a>
+          </div>
+      </nav>
+    <!--respnsiveMENU-->
+    <header>
+      <h1 class="anim">Eureka: Horror Comic</h1>
+      <p class="anim"> The following are a few conceptual splash pages of a horror comic.
+        The pages were drawn with a pen-nib, scanned, and then retouched digitally.
+        I based this story on my personal experience of losing a pet to an animal abuser.
+        The plot is that a man approaches and enters a club, intending to pick up his "sister"
+        that needs a ride home. He is surprised to find out that the hosts of the
+        clubs are all— cats? As the plot unfolds, the man is hit with bolts of déjà
+        vu. He realizes that the cats seem to recognize him and are passive-aggressively
+        resentful towards him. Eventually, he realizes that he is a cat abuser
+        that had brutally murdered all these cats, his "sister" was one of the
+        cat owners, and the cats get their revenge through tearing him to shreds.
+ </p>
+    </header>
+    <div class="work">
+
+      <img class="anim" src="./horrorcomic/reference1.jpg" alt="reference">
+      <img class="anim" src="./horrorcomic/reference2.jpg" alt="reference">
+        <div id="imgtext">REFERENCES</div>
+    </div>
+    <div class="header2">
+  </p>
+      </div>
+      <div class="work2">
+        <img class="anim" src="./horrorcomic/pg1.jpg" alt="pg1">
+        <img class="anim" src="./horrorcomic/pg2.jpg" alt="pg2">
+        <img class="anim" src="./horrorcomic/pg3.jpg" alt="pg3">
+        <img class="anim" src="./horrorcomic/pg4.jpg" alt="pg4">
+        <img class="anim" src="./horrorcomic/pg5.jpg" alt="pg5">
+        <img class="anim" src="./horrorcomic/pg6.jpg" alt="pg6">
+        <div id="imgtext">SPLASH PAGES</div>
+      </div>
+      <footer>
+        <a href="../../index.html">JACQUELYN WU</p>
+      </footer>
+  </div>
+<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+//NAVIGATION MENU
+var navBar =document.querySelector('.navBar');
+navBar.addEventListener('click',openNav)
+navBar.addEventListener('click',closeNav)
+function openNav(){
+  document.querySelector('.navBar').style.width= "100%";
+}
+function closeNav(){
+  document.querySelector('.navBar').style.width= "0%";
+}
+//SCROLL
+window.sr = ScrollReveal();
+sr.reveal('.anim');
+
+</script>
+</body>
+</html>

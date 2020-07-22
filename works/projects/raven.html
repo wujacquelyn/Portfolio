@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Works | The Raven by Edgar Allen Poe</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/kov8wrp.css">
+  <link rel='icon' href='../icon.png' type='image/x-icon'/ >
+  <link rel = "stylesheet" href ="raven.css">
+</head>
+<body>
+    <h2>The Raven by Edgar Allen Poe</h2>
+  <div class="wrapper">  <!--MENU-->
+        <div class="menu">
+          <a href="raven.html">&#x2190; previous</a>
+          <a href="../works.html">works&#10022;</a>
+          <a href="horror.html">next&#x2192;</a>
+        </div>
+    <!--MENU-->
+    <!--responsiveMENU-->
+      <!--<a href="../index.html">home</a>-->
+      <i id="menuIcon"class="material-icons md-36"onclick="openNav()">menu</i>
+      <nav class="navBar">
+      <div class="closebtn" onclick="closeNav">&times;</div>
+        <div class="overlay-content">
+          <a href="luna.html">&#x2190;previous</a>
+          <a href="../works.html">works&#10022;</a>
+          <a href="horror.html">next&#x2192;</a>
+        </div>
+      </nav>
+    <!--respnsiveMENU-->
+    <header>
+      <h1 class="anim">The Raven by Edgar Allen Poe | Three Different Designs</h1>
+        <p class="anim">For this project, I was instructed to choose three articles or writing
+           that talked about the same topic. However, what I had to do creatively was to make
+           each layout different in appearance (page size, color, length) while maintaining a
+            relationship between them through the structure (typography, grid system, layout, color etc).
+            I was not allowed to use any images, so I had to rely on layout to make these three designs
+            cohesive. For the three pieces of writing, I chose the original text of The Raven, a
+            critic of the poem, and an analysis of the poem.
+          </p>
+    </header>
+    <div class="sketch">
+      <div id="imgtext">SKETCHES AND TYPE SPECIMEN</div>
+      <img class="anim" src="./Raven/Layout&Sketches.jpg" alt="Layout Sketches">
+        <div id="imgtext">Sketches</div>
+      <img class="anim" src="./Raven/text.jpg" alt="type specimen">
+        <div id="imgtext">TYPE SPECIMEN</div>
+      <img class="anim" id="grid" src="./Raven/grid.jpg" alt="grid system ">
+        <div id="imgtext">GRIDSYSTEM</div>
+    </div>
+    <div class="header2">
+      <h1 class="anim">The Process</h1>
+      <p class="anim">
+        The writing of Edgar Allen Poe is mysterious, thrilling, and romantic.
+        To capture the essence of the Raven, I decided to go with a dark color
+        palette that is highlighted with gold accents. I leaned towards more serif
+        typefaces and chose more vintage and gothic-inspired typefaces for heading.
+        Although the sizing of each layout was different. I used a grid system of
+        12 grids. I was the most experimental with Layout 1 and used more serif
+        typefaces to represent the poem better in a whimsical nature. For Layout
+        2 and Layout 3, I aimed to be less abstract and introduce more order to
+        the spreads because both are more analytical articles that require more
+        formality in the presentation.
+      </p>
+    </div>
+    <div class="work">
+      <div id="imgtext">LAYOUT 1: ORIGINAL POEM</div>
+      <img class="anim" src="./Raven/TheRaven_1.jpg" alt="front cover">
+        <div id="imgtext">Front Cover</div>
+      <img class="anim" src="./Raven/TheRaven_12.jpg" alt="page 1 & 2">
+      <img class="anim" src="./Raven/TheRaven_13.jpg" alt="page 3 & 4">
+      <img class="anim" src="./Raven/TheRaven_14.jpg" alt="back cover">
+        <div id="imgtext">Back Cover</div>
+    </div>
+      <div class="work2">
+        <div id="imgtext">LAYOUT 2: Critique</div>
+        <img class="anim" src="./Raven/Raven2.jpg" alt="front cover">
+          <div id="imgtext">Front Cover</div>
+        <img class="anim" src="./Raven/Raven22.jpg" alt="page 1 & 2">
+        <img class="anim" src="./Raven/Raven23.jpg" alt="page 3 & 4">
+        <img class="anim" id=raven2 src="./Raven/Raven24.jpg" alt="page 5 & back cover">
+          <div id="imgtext">Page 5 & Back Cover</div>
+      </div>
+      <div class="work3">
+        <div id="imgtext">LAYOUT 3: Analysis</div>
+        <img class="anim" id="raven3" src="./Raven/Raven3.jpg" alt="front cover">
+          <div id="imgtext">Front Cover</div>
+        <img class="anim" src="./Raven/Raven32.jpg" alt="page 1 & 2"><br>
+        <img class="anim" src="./Raven/Raven33.jpg" alt="page 3 & 4"><br>
+          <img class="anim" src="./Raven/Raven34.jpg" alt="page 5 & 6"><br>
+        <img class="anim" id="raven3"src="./Raven/Raven35.jpg" alt="back cover">
+          <div id="imgtext">Back Cover</div>
+      </div>
+      <footer>
+        <a href="../../index.html">JACQUELYN WU</a>
+      </footer>
+    </div>
+
+
+<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+//NAVIGATION MENU
+var navBar =document.querySelector('.navBar');
+navBar.addEventListener('click',openNav)
+navBar.addEventListener('click',closeNav)
+function openNav(){
+  document.querySelector('.navBar').style.width= "100%";
+}
+function closeNav(){
+  document.querySelector('.navBar').style.width= "0%";
+}
+//SCROLL
+window.sr = ScrollReveal();
+sr.reveal('.anim');
+</script>
+</body>
+</html>

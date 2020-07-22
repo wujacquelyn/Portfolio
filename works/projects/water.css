@@ -1,0 +1,241 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+}
+h1{
+  margin: none;
+  font-family:"Optima",sans-serif;
+  font-weight: lighter;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
+a href{
+  color: gray;
+  position: fixed;
+  bottom: 1000px;
+}
+
+p1,p2,p3{
+  margin-left:8vw;
+  font-family:"Optima",sans-serif!important;
+  font-size: 1em!im;
+}
+@keyframes playX {
+  from {background-position-x: 0px;}
+  to {background-position-x: -3000px;}
+}
+@keyframes playY {
+  from {background-position-y: 0px;}
+  to {background-position-y: -4800px;}
+}
+.container{
+  margin-left: 10%;
+  float: left;
+  display:grid;
+  width: 90vw;
+  grid-template-columns: 30vw 30vw 30vw;
+  grid-template-rows: 10vh 25vh;
+}
+#sec{
+  grid-column-start: 1;
+  width: 300px;
+  height: 800px;
+  background-image: url("spritesheet_water1.jpg" );
+  animation: playX 1.67s steps(10) infinite,
+  playY 10.02s steps(6) infinite;
+}
+p1{
+  align-self: flex-start;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+#minute {
+  grid-column-start: 2;
+  width: 300px;
+  height: 800px;
+  background-image: url("spritesheet_water1.jpg" );
+  animation: playX 10s steps(10) infinite,
+    playY 60s steps(6) infinite;
+}
+p2{
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+#hour {
+  grid-column-start: 3;
+  width: 300px;
+  height: 800px;
+  background-image: url("spritesheet_water1.jpg" );
+  animation: playX 600s steps(10) infinite,
+    playY 3600s steps(6) infinite;
+}
+p3{
+  grid-column-start: 3;
+  grid-row-start: 1;
+}
+/*Menu*/
+.menu{
+  font-family: 'Raleway',sans-serif;
+  letter-spacing: 0.01em;
+  position: absolute;
+  top: 0vh;
+  left: 0em;
+  font-size: 1.5em;
+}
+.menu a{
+  color: #D5EBE9;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0em 2.5em 0em 2.5em;
+}
+.menu a:hover{
+  color:#009dff;
+}
+/*Menu*/
+/*NAVBAR*/
+nav{
+  font-family: 'Raleway',sans-serif;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+}
+.navBar{
+  height: 100%;
+  width:0;
+  line-height: 4em;
+  position: fixed;
+  z-index: 11;
+  top:0;
+  left:0;
+  background-color: #3f403f;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.navBar::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+.overlay-content{
+  position: relative;
+  top:25%;
+  width:100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.navBar a{
+  padding: 8px;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #D5EBE9;
+  display: block;
+  transition: 0.3s;
+}
+.overlay-content a:hover{
+  color:#009dff;
+}
+.navBar .closebtn{
+  color: #D5EBE9;;
+  cursor: pointer;
+  position: absolute;
+  top:0;
+  right:45px;
+  font-size: 4em;
+}
+
+#menuIcon{
+  display: none;
+}
+
+/*Responsiveness*/
+
+@media only screen and (max-width: 991px){
+  /*menu resp*/
+    .menu{
+      display: none;
+    }
+    h2{
+     margin-bottom: 1em;
+    }
+    #menuIcon{
+      position: relative;
+      margin: 0.5em;
+      display: inline;
+      outline: none;
+      font-size: 3em;
+      font-weight: 700;
+      cursor: pointer;
+      color:#D5EBE9;
+    }
+  /*menu resp*/
+  h1{
+    font-size: 5em;
+  }
+  .container{
+    width:100vw;
+    grid-template-columns: 300px;
+    grid-template-rows: 2em 800px;
+    justify-content: center;
+    grid-row-gap: .5%;
+    margin:0;
+    padding:0;
+    position: absolute;
+  }
+
+  p1{
+    margin:1%;
+    font-size: 1.5em;
+    align-self: start;
+    padding:none;
+    grid-column-start: 1;
+  }
+  #sec{
+    align-self: start;
+    margin:1%;
+    grid-row-start: 2;
+    width: 300px;
+    height: 800px;
+    background-image: url("spritesheet_water1.jpg" );
+    animation: playX 1.67s steps(10) infinite,
+    playY 10.02s steps(6) infinite;
+  }
+  p2{
+    font-size: 1.5em;
+    margin:1%;
+    align-self: start;
+    z-index: 10;
+    grid-row-start: 3;
+    grid-column-start: 1;
+  }
+  #minute {
+    margin:1%;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: 300px;
+    height: 800px;
+    background-image: url("spritesheet_water1.jpg" );
+    animation: playX 10s steps(10) infinite,
+      playY 60s steps(6) infinite;
+  }
+  p3{
+    font-size: 1.5em;
+    align-self: start;
+    z-index: 10;
+    margin:1%;
+    grid-column-start: 1;
+    grid-row-start: 5;
+  }
+  #hour {
+    margin:1%;
+    grid-column-start: 1;
+    grid-row-start: 6;
+    width: 300px;
+    height: 800px;
+    background-image: url("spritesheet_water1.jpg" );
+    animation: playX 600s steps(10) infinite,
+    playY 3600s steps(6) infinite;
+  }
+}

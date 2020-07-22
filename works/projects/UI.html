@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Jacquelyn Wu | Visual Art & Design </title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/kov8wrp.css">
+  <link rel='icon' href='../icon.png' type='image/x-icon'/ >
+  <link rel= "stylesheet" href="UI.css">
+</head>
+<body>
+  <h2> Galaxy Buttons</h2>
+  <div class="wrapper">
+    <!--MENU-->
+        <div class="menu">
+          <a href="../doodle.html">&#x2190;doodles</a>
+          <a href="../../../index.html">home&#10022;</a>
+          <a href="../../works.html">works&#10022;</a>
+        </div>
+    <!--MENU-->
+    <!--responsiveMENU-->
+
+      <i id="menuIcon"class="material-icons md-36"onclick="openNav()">menu</i>
+      <nav class="navBar">
+        <div class="closebtn" onclick="closeNav">&times;</div>
+          <div class="overlay-content">
+            <a href="../doodle.html">&#x2190;doodles</a>
+            <a href="../../../index.html">home&#10022;</a>
+            <a href="../../works.html">works&#10022;</a>
+          </div>
+      </nav>
+    <!--respnsiveMENU-->
+    <header>
+      <h1 class="anim"> User Interface | Dreamy & Galactic Buttons</h1>
+      <p class="anim"> For this project, I went with a galactic theme for an user interface design. The interface buttons are intended for mobile
+        app usage. Resting, Roll-over, and Selected states were considered along with some animation effects.
+ </p>
+    </header>
+    <div class="work">
+      <img class="anim" src="./UI/ui1.jpg" alt="sketch1">
+      <img class="anim" src="./UI/ui2.jpg" alt="sketch2">
+      <div id="imgtext">Sketches</div>
+    </div>
+    <div class="header2">
+      <h1 class="anim">Final Design</h1>
+      <p class="anim">
+        Although the sketcheds I created fit well my galactic theme, I realized that they may be too intricate for a user to see
+        on a small device like a mobile. Therefore, I had symplify my design a lot. I kept with a simialr color palette, but I removed
+        a lot of the many details.
+      </p>
+      </div>
+      <div class="work2">
+          <img class="anim" src="./UI/16-A08.jpg" alt="all Buttons">
+            <div id="imgtext"> All Buttons: Resting, Rollover, Selected</div>
+          <img class="anim" src="./UI/16-A08-a.gif" alt="animated demo1"><br>
+            <img class="anim" src="./UI/16-A08-b.gif" alt="animated demo2">
+            <div id="imgtext">Animated Demo</div>
+      </div>
+      <footer>
+        <a href="../../index.html">JACQUELYN WU</a>
+      </footer>
+  </div>
+<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="UI.js"></script>
+<script type="text/javascript">
+//NAVIGATION MENU
+var navBar =document.querySelector('.navBar');
+navBar.addEventListener('click',openNav)
+navBar.addEventListener('click',closeNav)
+function openNav(){
+  document.querySelector('.navBar').style.width= "100%";
+}
+function closeNav(){
+  document.querySelector('.navBar').style.width= "0%";
+}
+//SCROLL
+window.sr = ScrollReveal();
+sr.reveal('.anim');
+
+</script>
+</body>
+</html>
