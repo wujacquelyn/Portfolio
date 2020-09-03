@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
   rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/kov8wrp.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel='icon' href='img/icon.png' type='image/x-icon'/ >
 </head>
 <body>
@@ -21,13 +22,27 @@
     <div id="clickIMG">
       <!--<img src=" " id="IC">-->
     </div>
-    <script src="main.js" charset="utf-8"></script>
   <div class="footer">
-    <div id="links">
+    <!--MENU-->
+    <div id="links" class="menu">
     <a href="works/works.html">works&#10022;</a>
     <a href="about/about.html">about&#10022;</a>
     <a href="contact/contact.html">contact&#10022;</a>
+    </div>
+    <!--MENU-->
+    <!--responsiveMENU-->
+      <i id="menuIcon"class="material-icons md-36"onclick="openNav()">expand_less</i>
+      <nav class="navBar">
+      <div class="closebtn" onclick="closeNav">&times;</div>
+        <div class="overlay-content">
+          <a href="works/works.html">works&#10022;</a>
+          <a href="about/about.html">about&#10022;</a>
+          <a href="contact/contact.html">contact&#10022;</a>
+        </div>
+      </nav>
+      <!--responsiveMENU-->
   </div>
   </div>
+  <script src="main.js" charset="utf-8"></script>
 </body>
 </html>

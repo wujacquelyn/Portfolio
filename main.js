@@ -32,3 +32,13 @@ document.addEventListener("click", function userClicked(e){
   tag.style.left = x +'px';
   tag.style.top = y + 'px';
 })
+//NAVIGATION MENU
+  var navBar =document.querySelector('.navBar');
+  navBar.addEventListener('click',openNav)
+  navBar.addEventListener('click',closeNav)
+  function openNav(){
+    document.querySelector('.navBar').style.height= "100%";
+  }
+  function closeNav(){
+    document.querySelector('.navBar').style.height= "0%";
+  }

@@ -13,7 +13,7 @@ font-family: 'Raleway',sans-serif;
 body{
   width: 100%;
   height: 100%;
-  background: #473F78;
+  background: #2b4771;/*#171e5a;*/
 }
 .wrapper{
   width: 90%;
@@ -21,22 +21,39 @@ body{
 }
 
 .contact-title{
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   font-family: 'arpona', serif;
-  margin-top: 10%;
+  margin: 2em 0 2em 0;
   text-align: center;
   color:#00CCBE;
 }
 .contact-title h2{
-  font-weight: 300;
-  font-size: 4em;
-  line-height:1em;
+  font-weight: 400;
+  font-size: 3em;
+  line-height:0.2em;
 }
 .contact-title a{
   font-size: 0.5em;
 }
 .contact-title h3{
-  font-size: 1.75em;
+  font-size: 1.5em;
   font-weight: lighter;
+  margin: 0.5%;
+}
+h4{
+  position: absolute;
+  top: 25%;
+  left:50%;
+  width: 45vw;
+  margin: 10% -50% 10% 0%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-weight: 400;
+  line-height: 1em;
 }
   .fab{
     text-decoration: none;
@@ -45,49 +62,65 @@ body{
     color:#00CCBE;
   }
   .fab:hover{
-    color:white;
-  }
+    color:white;}
+
 form{
   position: fixed;
+  width: 40vw;
+  /*centering*/
   left: 50%;
-  top: 60%;
+  top: 15%;
+  margin-top: 20em;
   margin-right: -50%;
-  margin-top: 15em;
-  margin-bottom: 10em;
   transform: translate(-50%, -50%);
 }
+
 .form-control{
-  width: 600px;
-  text-align: center;
+  font-family: 'Raleway',sans-serif;
   background:transparent;
   border: none;
   outline: none;
   line-height: 1em;
   border-bottom: 1px solid #B1F6EF;
   color: #B1F6EF;
-  font-size: 1.25em;
+  font-size: 1.15em;
 }
-input,.textbox{
-width: 600px;
-height: 600px;
+/* FOR THE PLACEHOLDER TEXT*/
+                ::placeholder {
+                color: #c5e7e3;
+                opacity: 1; /* Firefox */
+                }
+                :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: #c5e7e3;
+                }
+                ::-ms-input-placeholder { /* Microsoft Edge */
+                  color: #c5e7e3;}
 
+#name, #email{
+  text-align: center;
+  width: 40vw;
+  height: 6vh;
 }
-input{
-  height: 3em;
-  max-width: 600px;
+#message {
+  text-align: center;
+  width: 40vw;
+  max-height: 25vh;
 }
+
 form .submit{
   background: #00CCBE;
   border-color: transparent;
   color: #fff;
   font-size: 1.75em;
-  height: 10%;
-  margin-top: 10%;
+  width: 40vw;
+  height: 7vh;
+  margin-top: 2.5%;
 }
 form .submit:hover{
   background-color: #009dff;
   cursor: pointer;
 }
+/*page title*/
 h1{
   color: #B1F6EF;
   font-size: 3em;
@@ -96,26 +129,32 @@ h1{
 }
 p{
   color:#fff;
-  font-size: 1em;
+  font-size: 0.85em;
   font-weight: 200;
 }
-
+img{
+  position: absolute;
+  top:50%;
+  left:50%;
+  width: 30vw;
+  margin: 5% 50% 5% 0%;
+  transform: translate(-50%, -50%);
+}
 /*footer*/
 footer{
   position: fixed;
-  margin-right: -50%;
   transform: translate(-50%, -50%);
   top: 90%;
+
   left: 50%;
   font-size: 1em;
   text-align: center;
   color: #00CCBE;
 }
-footer p{
+footer a{
+  text-decoration: none;
   text-shadow: 0 0 5px rgba(0,0,0,0.5);
   font-family: arpona, serif;
-  margin-top: 40%;
-  margin-bottom: 2.5%;
   letter-spacing: 0.5em;
   font-size: 1em;
   text-align: center;
@@ -132,7 +171,7 @@ footer p{
   color: #B1F6EF;
   text-decoration: none;
   font-weight: 700;
-  margin: 0em 2.5em 0em 2.5em;
+  margin: 1em 2.5em 1em 2.5em;
 }
 .menu a:hover{
   color:#009dff;
@@ -189,15 +228,15 @@ nav{
 #menuIcon{
   display: none;
 }
-/*Responsiveness*/
-@media only screen and (max-width: 600px){
-
+/******************* Responsiveness ***********************/
+@media only screen and (max-width: 990px){
+/*menu resp*/
   .menu{
     display: none;
   }
   #menuIcon{
-    position: absolute;
-    top: 10vh;
+    position: relative;
+    top: 0vh;
     left: 0.5em;
     display: inline;
     outline: none;
@@ -206,23 +245,54 @@ nav{
     cursor: pointer;
     color:#B1F6EF;
   }
+/*menu resp*/
+
+form{
+  width: 75vw;
+  left: 50%;
+  top: 15%;
+  margin-top: 15em;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  }
+#name, #email{
+  text-align: center;
+  width: 75vw;
+  height: 6vh;
+}
+#message {
+  text-align: center;
+  width: 75vw;
+  max-height: 25vh;
+}
+form .submit{
+  width: 75vw;
+}
   .contact-title{
+    position: relative;
     font-family: 'arpona', serif;
-    margin-top: 20%;
+    margin-top: 8%;
     text-align: center;
     color:#00CCBE;
   }
   .contact-title h2{
-    font-weight: 300;
-    font-size: 3.5em;
+    font-weight: 400;
+    font-size: 2.5em;
     line-height:1em;
+    margin: 1%;
   }
   .contact-title a{
     font-size: 0.5em;
   }
   .contact-title h3{
-    font-size: 1.75em;
+    margin: 2%;
+    font-size: 1.25em;
     font-weight: lighter;
+  }
+  h4{
+    top: 50%;
+    font-size: 2em;
+    width: 75vw;
   }
     .fab{
       text-decoration: none;
@@ -233,19 +303,11 @@ nav{
     .fab:hover{
       color:white;
     }
-    input,.textbox{
-    width: 400px;
-    height: 400px;
+    img{
+      width: 50vw;
+      height:50vh;
+    }
+    footer{
 
-    }
-    input{
-      height: 3em;
-      width: 400px;
-    }
-    form{
-      top:40%;
-    }
-    .form-control{
-      width:400px;
     }
 }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gardien | Coming Soon </title>
+    <link rel="stylesheet" href="gardiens.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.typekit.net/kov8wrp.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <img id="bird" src="bird.svg" alt="">
+      <div class="nav">
+        <div class="logo">
+          	&#11044; LOGO
+        </div>
+        <div class="menu">
+          <li><a href="">HOME</a></li>
+          <li><a href="">ABOUT</a></li>
+          <li><a href="">PRODUCT</a></li>
+          <li><a href="">CONTACT</a></li>
+          <li ><a id="button" href="">SHOP</a></li>
+        </div>
+        <i id="menuIcon"class="material-icons md-36"onclick="openNav()">menu</i>
+      </div>
+      <nav class="resp">
+        <div class="closebtn" onclick="closeNav()">&times;</div>
+          <div class="overlay-content">
+            <li id="link"><a href="">HOME</a></li><br>
+            <li><a href="">ABOUT</a></li><br>
+            <li><a href="">PRODUCT</a></li><br>
+            <li><a href="">CONTACT</a></li><br>
+            <li ><a id="button2" href="">SHOP</a></li><br>
+          </div>
+      </nav>
+    </div>
+    <script type="text/javascript">
+    //NAVIGATION MENU
+      var resp =document.querySelector('.resp');
+      resp.addEventListener('click',openNav)
+      resp.addEventListener('click',closeNav)
+      function openNav(){
+        document.querySelector('.resp').style.width= "100%";
+      }
+      function closeNav(){
+        document.querySelector('.resp').style.width= "0%";
+      }
+    </script>
+  </body>
+</html>
