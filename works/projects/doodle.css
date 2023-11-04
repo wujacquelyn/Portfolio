@@ -51,7 +51,7 @@ font-weight: 200;
     "content5 content5 content7 content7"
     "content8 content8 content8 content9"
     "content10 content11 content11 content11"
-    "content13 content13 content12 content12"
+    "content12 content12 content12 content13"
     "footer footer footer footer"
     ;
     grid-gap:0.2rem;
@@ -102,7 +102,7 @@ video{
 }
 #content1 #content2 #content3 #content4
 #content5 #content6 #content7 #content8
-#content9 #content10 #content11 #content12 #content13{
+#content9 #content10 #content11 #content12{
   align-self: flex-start;
   z-index: -1!important;
   background: black;
@@ -155,10 +155,6 @@ object-fit: cover;
 }
 #content12,#cont12_overlay{
   grid-area: content12;
-  object-fit:cover;
-}
-#content13,#cont13_overlay{
-  grid-area: content13;
   object-fit:cover;
 }
 
@@ -290,8 +286,7 @@ h2{
   grid-template-rows: repeat(1.5fr);
   grid-template-areas:
   "content1" "content2" "content3" "content4" "content5" "content6"
-  "content7" "content8" "content9" "content10" "content11" "content12"
-  "content13" "content13" "content14" "content 14" "content15" "content 16";
+  "content7" "content8" "content9" "content10" "content11" "content12";
 }
 
 footer a{
