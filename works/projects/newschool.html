@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Works | The Newschool</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/kov8wrp.css">
+  <link rel='icon' href='../icon.png' type='image/x-icon'/ >
+  <link rel = "stylesheet" href ="newschool.css">
+</head>
+<body>
+    <h2>The New School</h2>
+  <div class="wrapper">  <!--MENU-->
+        <div class="menu">
+          <a href="../works.html">works&#10022;</a>
+          <a href="../../index.html">home&#10022;</a>
+          <a href="../../contact/contact.html">contact&#10022;</a>
+        </div>
+    <!--MENU-->
+    <!--responsiveMENU-->
+      <!--<a href="../index.html">home</a>-->
+      <i id="menuIcon"class="material-icons md-36"onclick="openNav()">menu</i>
+      <nav class="navBar">
+      <div class="closebtn" onclick="closeNav">&times;</div>
+        <div class="overlay-content">
+          <a href="../works.html">works&#10022;</a>
+          <a href="../../index.html">home&#10022;</a>
+          <a href="../../contact/contact.html">contact&#10022;</a>
+        </div>
+      </nav>
+    <!--respnsiveMENU-->
+    <header>
+      <h1 class="anim">The New School - Public Engagement | Marketing Design</h1>
+        <p class="anim"> As, the graphic design student assistant at the
+          School of Public Engagement at the New School, I created
+          program promotional designs while managing brand assets. My work primarily
+          consisted of making course posters for the Foreign Languages courses.
+          </p>
+    </header>
+    <div class="LangCourses">
+      <div id="imgtext">SPRING 2021 LANGUAGES COURSES</div>
+      <img class="anim" src="./newschool/S21_Spanish.jpg" alt="S21 Spanish">
+      <img class="anim" src="./newschool/S21_French.jpg" alt="S21 French">
+      <img class="anim" src="./newschool/S21_Ger,Ita,Lat.jpg" alt="S21 German, Italian, Latin">
+      <img class="anim" src="./newschool/S21_Chinese_Japanese.jpg" alt="S21 Chinese and Spanish">
+      <img class="anim" src="./newschool/S21_Ar,Kor,ASL,Spec.jpg" alt="S21_Ar,Kor,ASL,Spec.jpg">
+        <div id="imgtext">Language Minors</div>
+      <img class="anim" src="./newschool/Minors_chinese&japanese_altered.jpg" alt="Minors">
+      <img class="anim" src="./newschool/Minors_hispanic&french.jpg" alt="Minors">
+        <div id="imgtext">Course Promotion & Program Information</div>
+      <img class="anim" id="promo" src="./newschool/ContentCourses_Auditing.jpg" alt="course promo">
+    </div>
+    <div class="header2">
+      <h1 class="anim">2021 School of Public Engagement Recognition Ceremony</h1>
+      <p class="anim">
+        Working with the Public Engagements team, I created live stream wrappers and motion graphics for multiple school departments'
+        online recognition ceremony.
+      </p>
+    </div>
+    <div class="work">
+      <div id="imgtext">Wrapper</div>
+      <img class="anim" src="./newschool/hs-template1.jpg" alt="holding slide">
+        <div id="imgtext">Holding Slide</div>
+      <img class="anim" src="./newschool/wrapper template_v2" alt="speaker slide">
+        <div id="imgtext">Speaker Slide</div>
+      <a href ="https://vimeo.com/event/941496/videos/542813129">
+        <img class="anim" id="irl" src="./newschool/mediastudies.png" alt="mediastudies">
+        </a>
+      <a href="https://vimeo.com/event/941347/videos/542796845">
+        <img class="anim" id="irl" src="./newschool/matesol.png" alt="matesol">
+        </a>
+      <a href="https://vimeo.com/event/941439/videos/542808414">
+        <img class="anim" id="irl" src="./newschool/creativewriting.png" alt="creativewriting">
+        </a>
+      <a href="https://vimeo.com/event/941389/videos/542801600">
+        <img class="anim" id="irl" src="./newschool/adultbachelors.png" alt="adultbachelors">
+        </a>
+      <div id="imgtext">In Use</div>
+
+    </div>
+      <div class="work2">
+        <div id="imgtext">Social Media</div>
+        <img class="anim" src="./newschool/CongratulationsGrad_2020.gif" alt=".gif">
+        <img class="anim" src="./newschool/congrats_tutors.gif" alt=".gif">
+          <div id="imgtext">Used for Newsletter & Social Media</div>
+      </div>
+      <footer>
+        <a href="../../index.html">JACQUELYN WU</a>
+      </footer>
+    </div>
+
+
+<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+//NAVIGATION MENU
+var navBar =document.querySelector('.navBar');
+navBar.addEventListener('click',openNav)
+navBar.addEventListener('click',closeNav)
+function openNav(){
+  document.querySelector('.navBar').style.width= "100%";
+}
+function closeNav(){
+  document.querySelector('.navBar').style.width= "0%";
+}
+//SCROLL
+window.sr = ScrollReveal();
+sr.reveal('.anim');
+</script>
+</body>
+</html>

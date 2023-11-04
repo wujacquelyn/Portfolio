@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1922.87 1111.44">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 70px;
+        font-family: MatrixIIOT-Bold, Matrix II OT;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-4 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-5 {
+        letter-spacing: -0.09em;
+      }
+
+      .cls-6 {
+        letter-spacing: -0.02em;
+      }
+
+      .cls-7 {
+        letter-spacing: -0.01em;
+      }
+    </style>
+  </defs>
+  <title>quote</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <g>
+      <rect x="0.5" y="0.5" width="1919" height="539"/>
+      <path class="cls-1" d="M1916.13-30.44v538H-1.87v-538h1918m1-1H-2.87v540h1920v-540Z" transform="translate(2.87 31.44)"/>
+    </g>
+    <g>
+      <rect class="cls-1" x="3.37" y="571.94" width="1919" height="539"/>
+      <path class="cls-1" d="M1919,541v538H1V541H1919m1-1H0v540H1920V540Z" transform="translate(2.87 31.44)"/>
+    </g>
+  </g>
+  <g id="Layer_2" data-name="Layer 2">
+    <text class="cls-2" transform="translate(77.34 164.32)">E<tspan class="cls-3" x="38.43" y="0">v</tspan><tspan x="76.02" y="0">ery art and </tspan><tspan class="cls-4" x="456.04" y="0">e</tspan><tspan class="cls-3" x="494.05" y="0">v</tspan><tspan x="531.64" y="0">ery inquir</tspan><tspan class="cls-5" x="860.57" y="0">y</tspan><tspan x="892.21" y="0">, and similarly </tspan><tspan class="cls-6" x="1374.86" y="0">e</tspan><tspan class="cls-7" x="1412.87" y="0">v</tspan><tspan x="1450.46" y="0">ery </tspan><tspan x="0" y="88">action as </tspan><tspan class="cls-3" x="312.9" y="88">w</tspan><tspan x="370.44" y="88">ell as choice, is held to aim at some good. </tspan><tspan class="cls-3" x="0" y="176">H</tspan><tspan x="49.35" y="176">ence people h</tspan><tspan class="cls-4" x="512.18" y="176">a</tspan><tspan class="cls-3" x="549.21" y="176">v</tspan><tspan x="586.8" y="176">e nobly declared that the good is </tspan><tspan x="0" y="264">that at which all things aim. </tspan></text>
+  </g>
+</svg>

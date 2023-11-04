@@ -18,7 +18,7 @@ if (hr>5,hr<18){
     console.log("it's nighttime")}
 
 //mouse position
-document.addEventListener("click", function userClicked(e){
+background.addEventListener("click", function userClicked(e){
   console.log(randomNum);
   var x = event.clientX;
   var y = event.clientY;
@@ -28,7 +28,7 @@ document.addEventListener("click", function userClicked(e){
   tag.src =icons[randomNum];
   document.getElementById('clickIMG').appendChild(tag);
   tag.style.opacity = '1';
-  tag.style.position = 'fixed';
+  tag.style.position = 'absolute';
   tag.style.left = x +'px';
   tag.style.top = y + 'px';
 })

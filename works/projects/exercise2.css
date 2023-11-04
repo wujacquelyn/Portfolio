@@ -1,0 +1,56 @@
+body, html{
+  height: 100%;
+  width:100%;
+  background: white;
+
+}
+h1{
+  text-align: center;
+  color: black;
+  position: absolute;
+  font-family: matrix-ii, serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  top: 95%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+}
+.good{
+  text-align: center;
+  cursor: grab;
+  margin: 0;
+  padding:0;
+  left:5%;
+  position: absolute;
+  z-index: 2;
+  color: white;
+  font-size: 18em;
+  font-weight: bolder;
+  font-family: discourse-wide, sans-serif;
+  background: linear-gradient(to top, #000000, rgba(28,28,28,0.2)), url('quote.svg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+}
+.action{
+  left:5%;
+  cursor: grab;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom:5%;
+  z-index: 2;
+  color: white;
+  font-size: 16.5em;
+  font-weight: bolder;
+  font-family: discourse-wide, sans-serif;
+  background: linear-gradient(to bottom, #ccc, rgba(155,155,155,0.2)), url('quote2.svg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+ -webkit-text-fill-color: transparent;
+ -webkit-background-clip: text;
+}
+}

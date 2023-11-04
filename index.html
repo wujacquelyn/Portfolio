@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible"content="ie-edge">
-  <title>Jacquelyn Wu</title>
+  <title>Jacquelyn Wu's Archive</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
   rel="stylesheet">
@@ -12,17 +12,33 @@
   <link rel='icon' href='img/icon.png' type='image/x-icon'/ >
 </head>
 <body>
+  <div class="landingPage">
+    <h1>Jacquelyn Wu's Archive</h1>
+    <h2> My Storage of Past Creative Explorations</h2>
+    <div id="fade-in"> &#10022; Tap around the page &#10022;</div>
+      <div id="BG">
+        <img id="pic" src ="img/nightsky.svg" >
+      </div>
+      <div id="clickIMG">
+        <!--<img src=" " id="IC">-->
+      </div>
+  </div>
+<div class="reel">
 
-  <h1>Jacquelyn Wu</h1>
-  <h2> Design & Visual Storytelling</h2>
-  <div id="fade-in"> &#10022; Tap around the page &#10022;</div>
-    <div id="BG">
-      <img id="pic" src ="img/nightsky.svg" >
-    </div>
-    <div id="clickIMG">
-      <!--<img src=" " id="IC">-->
-    </div>
-  <div class="footer">
+</div>
+  <script type="text/javascript">
+  //NAVIGATION MENU
+    var navBar =document.querySelector('.navBar');
+    navBar.addEventListener('click',openNav)
+    navBar.addEventListener('click',closeNav)
+    function openNav(){
+      document.querySelector('.navBar').style.width= "100%";
+    }
+    function closeNav(){
+      document.querySelector('.navBar').style.width= "0%";
+    }
+  </script><div>
+  <div class="header">
     <!--MENU-->
     <div id="links" class="menu">
     <a href="works/works.html">works&#10022;</a>
